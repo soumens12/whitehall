@@ -660,6 +660,7 @@ main section css
   transition: 250ms ease transform;
   vertical-align: middle;
   display: inline-block;
+  object-fit: contain;
 }
 .capacity-values
 {
