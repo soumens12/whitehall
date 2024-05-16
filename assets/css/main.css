@@ -769,9 +769,8 @@ main section css
 enquery column
 ======================*/
 .event-enquiry{
-  position: absolute;
+  position: relative;
   top: 50px;
-  width: 25%;
   border: 1px solid #8f8f8fce;
   padding: 23px;
   background: #fff;
