@@ -804,6 +804,9 @@ enquery column
 {
   color: var(--color-primary);
 }
+.owl-carousel .owl-item img {
+  height: 500px;
+}
 
 /*--------------------------------------------------------------
 # Footer
