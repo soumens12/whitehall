@@ -100,10 +100,10 @@ ol, ul {
 
 .zf-templateWrapper {
 	background:#fff;
-	border:1px solid #d6d6d6;
-	-webkit-box-shadow: 0 0px 3px #E1E1E1;
+	/* border:1px solid #d6d6d6; */
+	/* -webkit-box-shadow: 0 0px 3px #E1E1E1;
 	-moz-box-shadow: 0 0px 3px #E1E1E1;
-	box-shadow: 0 0px 3px #E1E1E1;
+	box-shadow: 0 0px 3px #E1E1E1; */
 	-webkit-border-radius:2px;
 	-moz-border-radius:2px;
 	border-radius:2px;
@@ -118,6 +118,8 @@ ol, ul {
 	padding:5px;
 	font-size:13px;	
 	width: 100%;
+	height: 40px;
+	border-radius: 3px;
 }
 
 .zf-tempContDiv input[type="text"]:hover,  .zf-tempContDiv textarea:hover{	
@@ -183,6 +185,7 @@ ol, ul {
 	-webkit-border-radius:2px 2px 0 0;
 	-moz-border-radius:2px 2px 0 0;
 	border-radius:2px 2px 0 0;
+	display: none;
 }
 .zf-tempHeadContBdr .zf-frmTitle {
 	color: #FFFFFF;
@@ -208,7 +211,7 @@ ol, ul {
 }
 
 .zf-tempFrmWrapper {
-	padding:10px 15px;
+	padding:10px 0px;
 	margin:1px 0;
 }
 
@@ -227,6 +230,16 @@ ol, ul {
 	padding:4px; 
 	border:1px solid #e5e5e5; 
 	font-size:13px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #fafafa;
+	
+	}
+	.zf-form-sBox:focus
+	{
+		box-shadow: none;
+		border:1px solid #e5e5e5; 
+		outline: none;
 	}
 
 .zf-name .zf-tempContDiv span, .zf-phone .zf-tempContDiv span, .zf-time .zf-tempContDiv span{
@@ -533,7 +546,10 @@ ol, ul {
 	text-align:center;
 }
 
-.zf-fmFooter .zf-submitColor{ font-size:14px; padding:4px 10px;}
+.zf-fmFooter .zf-submitColor{ font-size: 18px;
+    padding: 5px 27px;
+    background: #f77e1b;
+    border: 1px solid #f77e1b;}
 
 .zf-submitColor{
 	color: #fff;
@@ -547,6 +563,8 @@ ol, ul {
 	-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
 	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
 	text-shadow:0 1px 0 rgba(0, 0, 0, 0.25);
+	font-family: var(--font-oswald);
+	transition: all 0.3s;
 	}
 	
 .zf-submitColor:hover{
@@ -554,6 +572,8 @@ ol, ul {
 	background: -webkit-gradient(linear, left top, left bottom, from(#1988d6), to(#1988d6));
 	background: -moz-linear-gradient(top,  #1988d6,  #1988d6);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#1988d6', endColorstr='#1988d6');
+	background: #000;
+    border: 1px solid #000;
 	}	   	
 
 /****************Field Small/Medium/Large Starts Here****************/
