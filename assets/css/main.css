@@ -663,7 +663,7 @@ main section css
 }
 .capacity-values
 {
-  font-size: 40px;
+  font-size: 16px;
 }
 .capacity-labels
 {
@@ -671,7 +671,7 @@ main section css
   text-transform: uppercase;
   font-weight: 600;
   font-family: var(--font-default);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .include-card
