@@ -240,7 +240,7 @@ section {
 }
 
 .header .logo img {
- width: 60px;
+ width: 90px;
   margin-right: 6px;
 }
 
@@ -484,7 +484,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: #fff;
+    color: #000;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
