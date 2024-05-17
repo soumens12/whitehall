@@ -550,6 +550,12 @@ section {
 {
   font-size: 14.85px !important;
 }
+.hero img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: bottom;
+}
 .hero-carousel .owl-nav
 {
   position: absolute;
@@ -583,6 +589,14 @@ section {
   top: 50%;
   transform: translateY(-50%);
 }
+@media only screen and (max-width:767px){
+  .hero img{
+    width: 100%;
+    height: 400px;
+    object-position: right;
+  }
+}
+
 
 
 /*================================

@@ -127,7 +127,9 @@
 
   <!-- ======= Hero Section ======= -->
   <section class="hero py-0">
-    <div class="owl-carousel owl-theme hero-carousel">
+    <img src="assets/img/hero-slide/hero-image.png" class="d-none d-lg-block" alt="">
+    <img src="assets/img/hero-slide/hero-mobile.png" class="d-block d-lg-none" alt="">
+    <!-- <div class="owl-carousel owl-theme hero-carousel">
       <div class="item"><img src="assets/img/hero-slide/7.jpeg" alt=""></div>
       <div class="item"><img src="assets/img/hero-slide/1.jpg" alt=""></div>
       <div class="item"><img src="assets/img/hero-slide/2.jpg" alt=""></div>
@@ -135,7 +137,7 @@
       <div class="item"><img src="assets/img/hero-slide/4.jpg" alt=""></div>
       <div class="item"><img src="assets/img/hero-slide/5.jpg" alt=""></div>
       <div class="item"><img src="assets/img/hero-slide/6.jpg" alt=""></div>
-    </div>
+    </div> -->
   </section>
 
   <main id="main">
@@ -143,9 +145,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 d-block d-lg-none">
-            <div class="main-heading d-block d-lg-none">
+            <!-- <div class="main-heading d-block d-lg-none">
               <h1 class="entry-title">Welcome to White Feather</h1>
               <h4 class="entry-subtitle">Experience the epitome of luxury and excellence for your corporate events in Bengaluru!</h4>
+            </div> -->
+            <div id="overview" class="white-box my-5 d-block d-lg-none">
+              <h1 class="">Overview</h1>
+              <hr class="heading-divider border-black opacity-100">
+              <p>
+                White Feather is Bengaluru’s largest corporate venue, located in the heart of Electronic City. Offering over 18,000 sq. ft. of sophisticated and comfortable space, it is ideal for large corporate events, grand meetings, conferences, exhibitions, and major business events. With a 4-acre parking area, White Feather combines modern amenities with a charming, rustic feel, ensuring a great experience for all guests.
+              </p>
             </div>
             <div class="event-enquiry">
               <h3 class="section-heading">Event Enquiry</h3>
@@ -162,10 +171,11 @@
                 <!---------template Container Starts Here---------->
                 <div class="zf-subContWrap zf-topAlign"><ul>
                 <!---------Name Starts Here----------> 
-                <li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName"> 
+                <li class="zf-tempFrmWrapper zf-name zf-namemedium">
+                  <!-- <label class="zf-labelName"> 
                 Please Enter Your Name 
                 <em class="zf-important">*</em>
-                </label>
+                </label> -->
                 <div 
                 class="zf-tempContDiv zf-twoType"  
                 >
@@ -181,9 +191,10 @@
                 <div class="zf-clearBoth"></div></div><p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Name Ends Here----------> 
                 <!---------Phone Starts Here----------> 
-                <li  class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+                <li  class="zf-tempFrmWrapper zf-small">
+                  <!-- <label class="zf-labelName"> 
                 Please Enter Your Phone Number <em class="zf-important">*</em>
-                </label>
+                </label> -->
                 <div class="zf-tempContDiv zf-phonefld">
                 <div
                 class="zf-phwrapper zf-phNumber"  
@@ -193,24 +204,29 @@
                 <div class="zf-clearBoth"></div></div><p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Phone Ends Here----------> 
                 <!---------Email Starts Here---------->  
-                <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+                <li class="zf-tempFrmWrapper zf-small">
+                  <!-- <label class="zf-labelName"> 
                 Please Enter Your Email <em class="zf-important">*</em>
-                </label>
+                </label> -->
                 <div class="zf-tempContDiv">
                 <span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="Enter&#x20;Your&#x20;Email"/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
                 <!---------Date Starts Here----------> 
-                <li class="zf-tempFrmWrapper zf-date"><label class="zf-labelName"> 
+                <li class="zf-tempFrmWrapper zf-date">
+                  <!-- <label class="zf-labelName"> 
                 Please Select Your Event Date <em class="zf-important">*</em>
-                </label>
+                </label> -->
                 <div class="zf-tempContDiv">
-                <span> <input type="text" name="Date" checktype="c4" value="" maxlength="25" placeholder="Event&#x20;Date"/><label>dd-MMM-yyyy</label> </span><div class="zf-clearBoth"></div><p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                <span> <input type="date" name="Date" checktype="c4" value="" maxlength="25" placeholder="Event&#x20;Date"/>
+                  <!-- <label>dd-MMM-yyyy</label>  -->
+                </span><div class="zf-clearBoth"></div><p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Date Ends Here----------> 
                 <!---------Dropdown Starts Here---------->
-                <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                <li class="zf-tempFrmWrapper zf-small">
+                  <!-- <label class="zf-labelName">
                 Please Select Event Type
                 <em class="zf-important">*</em>
-                </label>
+                </label> -->
                 <div class="zf-tempContDiv">
                 <select class="zf-form-sBox" name="Dropdown" checktype="c1">
                 <option selected="true" value="-Select-">-Select-</option>
@@ -226,10 +242,11 @@
                 </select><p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Dropdown Ends Here---------->
                 <!---------Number Starts Here---------->
-                <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+                <li class="zf-tempFrmWrapper zf-small">
+                  <!-- <label class="zf-labelName"> 
                 Number of Guests 
                 <em class="zf-important">*</em>
-                </label>
+                </label> -->
                 <div class="zf-tempContDiv">
                 <span> <input type="text" name="Number" checktype="c2" value="" maxlength="18" placeholder="Number&#x20;of&#x20;Guests"/></span> <p id="Number_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Number Ends Here---------->
@@ -248,87 +265,25 @@
               <!--enquery end-->
 
 
-              <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item event-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button px-0 collapsed accro-data" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      1. Your Event Details
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item event-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button px-0 collapsed accro-data" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                     2 Additional Information
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p> If you have any particular requirements for your venue type, event format, seating, AV, catering, decoration, entertainment, transport, etc., please tell us here.
-                      </p>
-                      <div>
-                        <textarea name="" id="" rows="5" class="form-control"></textarea>
-                      </div>
-                      <p>
-                        Your event enquiry was successfully received. We’ve sent you an email to confirm this. A member of the White Feather team will start working on your brief shortly. We will be in touch with you as soon as possible.
-
-                      </p>
-                      <p>
-                        For urgent enquiries, please call 9886050005.
-                      </p>
-                      <p>
-                        Kind Regards,
-                        White Feather Team
-                      </p>
-                      <hr class="heading-divider border-black opacity-100 mb-0">
-                      <p class="mb-2">
-                        Experience the epitome of luxury and excellence for your corporate events.
-                      </p>
-                      <p>
-                        Email: info@udupashospitality.com <br>
-                        Tel: 9886050005<br>
-                        Address: Opposite Metro Cash & Carry, NICE Junction, Electronic City, Bangalore, India
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item event-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button px-0 collapsed accro-data" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      3. Venue / Supplier Details
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                      <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
-                      here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
-                      representative of how this would look in a real-world application.</div>
-                  </div>
-                </div>
-              </div> -->
+            </div>
+            <div class="white-box my-5">
+              <h4 class="mb-3">
+                Curious About How Your Corporate Event Will Turn Out Before the Special Day?
+              </h4>
+              <p><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Join us for a guided tour & food tasting session to savor the flavors <span class="bi bi-arrow-right-circle"></span></a></p>
             </div>
           </div>
           <div class="col-lg-8">
-            <div class="main-heading d-none d-lg-block">
+            <!-- <div class="main-heading d-none d-lg-block">
               <h1 class="entry-title">Welcome to White Feather</h1>
               <h4 class="entry-subtitle">Experience the epitome of luxury and excellence for your corporate events in Bengaluru!</h4>
-            </div>
+            </div> -->
 
-            <div id="overview" class="white-box my-5">
+            <div id="overview" class="white-box my-5 d-none d-lg-block">
               <h3 class="section-heading">Overview</h3>
               <hr class="heading-divider border-black opacity-100">
               <p>
-                White Feather is a premier venue offering over 18,000 sq. ft. of sophisticated and comfortable space for large corporate events. The venue is ideal for grand meetings, conferences, exhibitions, and major business events. Designed to blend modern comforts with a rich, rustic ambience, White Feather aims to excite delegates and provide a blissful experience for all guests. 
+                White Feather is Bengaluru’s largest corporate venue, located in the heart of Electronic City. Offering over 18,000 sq. ft. of sophisticated and comfortable space, it is ideal for large corporate events, grand meetings, conferences, exhibitions, and major business events. With a 4-acre parking area, White Feather combines modern amenities with a charming, rustic feel, ensuring a great experience for all guests.
               </p>
             </div>
 
@@ -364,7 +319,7 @@
                         <div class="d-flex gap-3 align-items-start">
                           <img class="capacity-display-icons" src="assets/img/Capacity2.png" alt="Dinner Venue, Set-up For Dinner" title="Dinner Venue, Set-up For Dinner">
                           <div>
-                            <p class="capacity-labels">Event Space</p>
+                            <p class="capacity-labels">Event Space:</p>
                             <!-- <h4 class="text-white capacity-values">Accommodates 500</h4> -->
                             <p class="text-white small">
                               Spacious covered and open areas, ideal for: corporate receptions and breakout sessions.
@@ -420,7 +375,7 @@
                   <div class="col-lg-6 mb-3">
                     <div class="card p-0 rounded-0 border-0 include-card">
                       <div class="card-body p-0">
-                        <img src="assets/img/includes/includes3.jpeg" class="w-100" alt="">
+                        <img src="assets/img/includes/includes3.jpg" class="w-100" alt="">
                       </div>
                       <div class="card-footer rounded-0">
                         <h4>Main Hall </h4>
@@ -443,7 +398,7 @@
                         <img src="assets/img/includes/includes4.jpeg" class="w-100" alt="">
                       </div>
                       <div class="card-footer rounded-0">
-                        <h4>Guest Room</h4>
+                        <h4>Guest Rooms</h4>
                       </div>
                     </div>
                   </div>
@@ -674,7 +629,9 @@
                 Please Select Your Event Date <em class="zf-important">*</em>
                 </label>
                 <div class="zf-tempContDiv">
-                <span> <input type="text" name="Date" checktype="c4" value="" maxlength="25" placeholder="Event&#x20;Date"/><label>dd-MMM-yyyy</label> </span><div class="zf-clearBoth"></div><p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                <span> <input type="date" name="Date" checktype="c4" value="" maxlength="25" placeholder="Event&#x20;Date"/>
+                  <!-- <label>dd-MMM-yyyy</label>  -->
+                </span><div class="zf-clearBoth"></div><p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Date Ends Here----------> 
                 <!---------Dropdown Starts Here---------->
                 <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
@@ -801,7 +758,7 @@
             <div class="col span_1_of_3 borderbox">
               <svg class="style-svg replaced-svg svg-replaced-0" xml:space="preserve" viewBox="0 0 595.28 595.275" height="595.275px" width="595.28px" y="0px" x="0px" id="Layer_1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
               <path d="M298.098,54.485c-134.954,0-244.361,109.407-244.361,244.362c0,134.993,109.407,244.361,244.361,244.361  c134.955,0,244.362-109.368,244.362-244.361C542.46,163.892,433.053,54.485,298.098,54.485z M286.584,404.47l-17.318,18.763  l-16.66-19.403l-94.318-109.712l30.723-33.131l76.465,56.308l167.073-137.251l31.167,33.058L286.584,404.47z" fill="currentColor"></path>
-              </svg> <strong> Prime E-City Location:</strong> Located in Electronic City, offering unmatched convenience and prestige in a major IT and manufacturing hub.
+              </svg> <strong> Prime E-City Location:</strong> Located in Electronic City, offering unmatched convenience and prestige.
             </div>
           </div>
           <div class="col-lg-4 mb-3 d-flex">
@@ -918,6 +875,21 @@
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

@@ -579,7 +579,7 @@ ol, ul {
 
 /****************Field Small/Medium/Large Starts Here****************/
 
-.zf-small .zf-tempContDiv input[type="text"], .zf-small .zf-tempContDiv textarea, .zf-small .zf-mSelect select, .zf-small .zf-tempContDiv .zf-sliderCont, .zf-small .zf-tempContDiv .zf-pdfTextArea, .zf-small .zf-signContainer{
+.zf-small .zf-tempContDiv input[type="text"], .zf-small .zf-tempContDiv textarea, .zf-small .zf-tempContDiv input[type="date"] .zf-small .zf-mSelect select, .zf-small .zf-tempContDiv .zf-sliderCont, .zf-small .zf-tempContDiv .zf-pdfTextArea, .zf-small .zf-signContainer{
 	width:100%;
 	}
 .zf-medium .zf-tempContDiv input[type="text"], .zf-medium .zf-tempContDiv textarea, .zf-medium .zf-mSelect select, .zf-medium .zf-tempContDiv .zf-sliderCont, .zf-medium .zf-tempContDiv .zf-pdfTextArea, .zf-medium .zf-signContainer{
@@ -787,8 +787,9 @@ ol, ul {
     font-size: 11px;
     margin-top: 2px;
 }
-.zf-medium .zf-phonefld input[type="text"], .zf-small .zf-phonefld input[type="text"] {
+.zf-medium .zf-phonefld input[type="text"], .zf-small .zf-phonefld input[type="text"], .zf-tempContDiv input[type="date"] {
     width: 100%;
+	border: 1px solid #a7bece;
 }
 .zf-small .zf-phwrapper {
     width: 100%;
