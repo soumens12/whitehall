@@ -294,7 +294,7 @@ section {
     height: 1.75rem;
     right: 0;
   }
-  .navbar a:last-child
+  .navbar li:last-child a
   {
     padding-right: 0;
   }
