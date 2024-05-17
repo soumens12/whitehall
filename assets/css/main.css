@@ -294,6 +294,10 @@ section {
     height: 1.75rem;
     right: 0;
   }
+  .navbar a:last-child
+  {
+    padding-right: 0;
+  }
   .navbar li:last-child a::before
   {
     display: none;
@@ -747,7 +751,8 @@ main section css
   vertical-align: middle;
 }
 .owl-carousel .owl-item img {
-  height: 500px;
+  height: 600px;
+  object-fit: cover;
 }
 
 /*==clientele css===*/
